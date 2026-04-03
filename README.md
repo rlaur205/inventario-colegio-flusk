@@ -255,6 +255,40 @@ http://localhost:5000
 - **Historial completo:** Vista unificada y cronológica de todos los movimientos del inventario.
 - **API REST:** Endpoints JSON para consumo dinámico desde el frontend.
 
+A continuación se detallan las capacidades del sistema con capturas de pantalla de la interfaz de usuario.
+
+### 8.1 Dashboard y Vista General
+El panel principal ofrece una visión en tiempo real del estado del inventario mediante indicadores clave (KPIs) y gráficos estadísticos.
+
+| Vista de Inventario General | Dashboard y Estadísticas |
+| :---: | :---: |
+| ![Inventario](imgs/img5.png) | ![Dashboard](imgs/img7.png) |
+| *Estado actual de productos y stock.* | *Indicadores de valor, alertas y gráfico por categorías.* |
+
+---
+
+### 8.2 Gestión de Registros (Formularios)
+El sistema utiliza ventanas modales para facilitar el registro de datos sin perder el contexto de la navegación.
+
+| Registrar Nuevo Producto | Registrar Proveedor |
+| :---: | :---: |
+| ![Producto](imgs/img1.png) | ![Proveedor](imgs/img2.png) |
+| *Formulario de creación de productos.* | *Registro de datos de contacto de proveedores.* |
+
+| Entrada de Mercancía | Salida / Venta de Stock |
+| :---: | :---: |
+| ![Entrada](imgs/img3.png) | ![Salida](imgs/img4.png) |
+| *Incremento de stock con lote y vencimiento.* | *Egreso de productos con validación de existencia.* |
+
+---
+
+### 8.3 Historial de Movimientos (Kardex)
+Registro cronológico detallado que permite auditar cada operación realizada en el sistema, diferenciando entre entradas y salidas.
+
+![Historial](imgs/img6.png)
+*Vista del historial unificado (Kardex) con filtros de fecha y responsable.*
+
+
 ---
 
 ## 9. Consideraciones Técnicas
@@ -274,3 +308,4 @@ http://localhost:5000
 - Separar la lógica de negocio en un archivo de servicios independiente del archivo de rutas.
 - Migrar de SQLite a PostgreSQL para entornos de producción con mayor concurrencia.
 - Agregar pruebas unitarias con `pytest`.
+
